@@ -6,6 +6,9 @@ jobs:
   # Job name
   feature-pipeline:
     if: github.ref_name != 'main'
+    permissions:
+      contents: read
+      security-events: read
     uses: 88s-org/workflows/.github/workflows/nodejs-feature-pipeline.yaml@main
     with:
       project: 'roboshop'
