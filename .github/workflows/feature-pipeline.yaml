@@ -9,6 +9,7 @@ jobs:
       project: 'roboshop'
       component: 'catalogue'
       environment: 'dev' 
+    secrets: inherit
 
   main-pipeline:
     if: github.ref_name == 'main'
